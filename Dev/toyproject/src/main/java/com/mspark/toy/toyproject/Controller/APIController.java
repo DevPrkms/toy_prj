@@ -1,4 +1,4 @@
-package com.mspark.toy1.toyproject.Controller;
+package com.mspark.toy.toyproject.Controller;
 
 import lombok.extern.java.Log;
 import org.springframework.web.bind.annotation.RequestMapping;

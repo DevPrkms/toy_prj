@@ -1,4 +1,4 @@
-package com.mspark.toy1.toyproject;
+package com.mspark.toy.toyproject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

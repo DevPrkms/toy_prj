@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class CrawlController {
 
     // 스케쥴링해서 정해진 시간에 크롤링
-    @RequestMapping(value = "/getNews")
-    public String getNews() {
-        log.info(this.getClass().getName() + " : ### getNews ###");
+    @RequestMapping(value = "/setNews")
+    public String setNews() {
+        log.info(this.getClass().getName() + " : ### setNews ###");
         return null;
     }
 }

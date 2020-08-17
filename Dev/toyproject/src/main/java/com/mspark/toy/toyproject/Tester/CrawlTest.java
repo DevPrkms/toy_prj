@@ -1,6 +1,9 @@
 package com.mspark.toy.toyproject.Tester;
 
-import lombok.extern.java.Log;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+
+import java.io.IOException;
 
 public class CrawlTest {
 
@@ -20,6 +23,20 @@ public class CrawlTest {
 
     public static void getDongA() {
         System.out.println(" ### getDongA 실행 ### ");
+
+        String Title, Contents, Image = "";
+        String main_url = "https://www.donga.com/news/List?p=1&prod=news&ymd=&m=NP";
+        // 크롤링 url (동아닷컴 동아일보 기사만 링크)
+        Document doc = null;
+        // Document 초기화
+
+        try {
+            doc = Jsoup.connect(main_url).get();
+            // Document 객체에 url 연결하여 접속
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         System.out.println(" ### getDongA 종료 ### ");
     } // 동아닷컴
 
